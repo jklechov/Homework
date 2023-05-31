@@ -1,0 +1,24 @@
+using Microsoft.VisualBasic;
+using System;
+using System.Runtime.CompilerServices;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Enter the first variable: ");
+        int a = int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter the second variable: ");
+        int b = int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter the third variable: ");
+        int c = int.Parse(Console.ReadLine());
+        int tempVariable;
+        tempVariable = a;
+        a = b; 
+        b=c; 
+        c = tempVariable;
+        Console.WriteLine("The value of the first variable is: " + a);
+        Console.WriteLine("The value of the second variable is: " + b);
+        Console.WriteLine("The value of the third variable is: " + c);
+    }
+}
