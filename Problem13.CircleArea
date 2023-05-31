@@ -1,0 +1,14 @@
+using Microsoft.VisualBasic;
+using System;
+using System.Runtime.CompilerServices;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Enter the radius of the circle:");
+        double radius = double.Parse(Console.ReadLine());
+        double area = Math.PI * radius;
+        Console.WriteLine("Area of the circle is: " + area);
+    }
+}
