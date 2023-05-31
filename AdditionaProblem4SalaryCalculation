@@ -1,0 +1,20 @@
+using Microsoft.VisualBasic;
+using System;
+using System.Runtime.CompilerServices;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Enter starting salary:");
+        double salary = double.Parse(Console.ReadLine());
+        int monthlyRises = 3;
+        double slaryAfterRise = 0;
+        while (monthlyRises!=0) 
+        {
+            slaryAfterRise = salary + (salary - (salary * 0.1));
+            monthlyRises--;
+        }
+        Console.WriteLine("The salary after 3 monthly raises is: "+slaryAfterRise);
+    }
+}
