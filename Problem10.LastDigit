@@ -1,0 +1,22 @@
+using Microsoft.VisualBasic;
+using System;
+using System.Runtime.CompilerServices;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Enter a number:");
+        int number = int.Parse(Console.ReadLine());
+
+        int lastDigit = number % 10;
+        if (lastDigit == 7)
+        {
+            Console.WriteLine("The last digit is seven");
+        }
+        else 
+        {
+            Console.WriteLine("The last digit is NOT seven");
+        }
+    }
+}
