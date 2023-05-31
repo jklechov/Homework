@@ -1,0 +1,16 @@
+using Microsoft.VisualBasic;
+using System;
+using System.Runtime.CompilerServices;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Enter side A of the rectangle:");
+        double sideA = double.Parse(Console.ReadLine());
+        Console.WriteLine("Ënter side B of the rectangle:");
+        double sideB = double.Parse(Console.ReadLine());
+        double area = sideA * sideB;
+        Console.WriteLine("Area of the rectangle is: " + area);
+    }
+}
