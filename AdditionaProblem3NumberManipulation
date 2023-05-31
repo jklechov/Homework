@@ -1,0 +1,44 @@
+using Microsoft.VisualBasic;
+using System;
+using System.Runtime.CompilerServices;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Enter a four digit number:");
+        int number = int.Parse(Console.ReadLine());
+        int digitsSum = 0;
+
+        while (number != 0) 
+        {
+            digitsSum += number % 10;
+            number /= 10;
+        }
+        Console.WriteLine("The sum of the digits is: " + digitsSum);
+        Console.WriteLine();
+        Console.WriteLine("Rearenging a number(abcd) to new number(dcba)");
+        Console.WriteLine("Enter a new four digit number:");
+        int secondNumber = int.Parse(Console.ReadLine());
+        int reversedNumber = 0;
+        while (secondNumber > 0) 
+        {
+        reversedNumber=reversedNumber*10 + secondNumber%10;
+            secondNumber = secondNumber/10;
+        }
+        Console.WriteLine("The new rearenged number is: "+reversedNumber);
+        Console.WriteLine();
+        Console.WriteLine("Rearenging a number(abcd) to new number(dbca)");
+        Console.WriteLine("Enter a new four digit number:");
+        int newNumber = int.Parse(Console.ReadLine());
+        int digitD = newNumber % 10;
+        newNumber = newNumber / 10;
+        int digitC = newNumber % 10;
+        newNumber = newNumber / 10;
+        int digitB=newNumber % 10;
+        newNumber = newNumber / 10;
+        int digitA = newNumber % 10;
+        int rearengedNumber = (digitD*1000)+(digitB*100)+(digitC*10) + digitA;
+        Console.WriteLine("The new rearenged number (dbca) is: " + rearengedNumber);
+    }
+}
