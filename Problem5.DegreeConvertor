@@ -1,0 +1,14 @@
+using Microsoft.VisualBasic;
+using System;
+using System.Runtime.CompilerServices;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Enter the temperature is Celsius: ");
+        double celsiusTemp = double.Parse(Console.ReadLine());
+        double farenheithTemp = celsiusTemp * (9 / 5) + 32;
+        Console.WriteLine("Enter eqivalent temperature in Farenheith is: "+farenheithTemp+" degrees");
+    }
+}
