@@ -1,0 +1,14 @@
+using Microsoft.VisualBasic;
+using System;
+using System.Runtime.CompilerServices;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Enter the sum in BGN: ");
+        double sumBgn = double.Parse(Console.ReadLine());
+        double sumEur = sumBgn * 1.95;
+        Console.WriteLine("Enter eqivalent sum in EUR: " + sumEur + " EUR");
+    }
+}
