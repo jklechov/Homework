@@ -1,0 +1,22 @@
+using Microsoft.VisualBasic;
+using System;
+using System.Runtime.CompilerServices;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Enter the first number: ");
+        int firstIntegerNumber = int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter the second number: ");
+        int secondIntegerNumber = int.Parse(Console.ReadLine());
+        int sum = firstIntegerNumber + secondIntegerNumber;
+        int subtraction = firstIntegerNumber - secondIntegerNumber;
+        int multiplication = firstIntegerNumber * secondIntegerNumber;
+        int division = firstIntegerNumber / secondIntegerNumber;
+        Console.WriteLine("The sum of the two numbers is: "+sum);
+        Console.WriteLine("The subtraction of the two numbers is: "+subtraction);
+        Console.WriteLine("The multiplication of the two numbers is: "+multiplication);
+        Console.WriteLine("The division of the two numbers is: "+division);
+    }
+}
