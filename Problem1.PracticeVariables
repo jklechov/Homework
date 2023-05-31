@@ -1,0 +1,20 @@
+using Microsoft.VisualBasic;
+using System;
+using System.Runtime.CompilerServices;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int simpleNumber = 123;
+        double doubleNumber = 123.5;
+        String text = "Liverpool'";
+        char character = 'j';
+        bool isItTrue = false;
+        Console.WriteLine("The first variable is Integer: " + simpleNumber + ";");
+        Console.WriteLine("The second variable is Double: " + doubleNumber + ";");
+        Console.WriteLine("The third variable is String: " + text + ";");
+        Console.WriteLine("The fourth variable is Char: " + character + ";");
+        Console.WriteLine("The fifth variable is Boolean: " + isItTrue + ";");
+    }
+}
