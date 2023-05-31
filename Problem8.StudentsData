@@ -1,0 +1,27 @@
+using Microsoft.VisualBasic;
+using System;
+using System.Runtime.CompilerServices;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        String firstName = "Jordan";
+        String surName = "Borislavov";
+        String familyName = "Klechov";
+        long phoneNumber = 898231125;
+        String mailAddres = "jkelchov@gmail.com";
+        String city = "Sofia";
+        char gender = 'M';
+        int age = 35;
+        Console.WriteLine("Students information:");
+        Console.WriteLine("First Name: "+firstName);
+        Console.WriteLine("Surname: "+surName);
+        Console.WriteLine("Family name: "+familyName);
+        Console.WriteLine("Phone number: "+"+359"+phoneNumber);
+        Console.WriteLine("E-mail: "+mailAddres);
+        Console.WriteLine("Adress: "+city);
+        Console.WriteLine("Gender: "+ gender);
+        Console.WriteLine("Age: "+age);
+    }
+}
