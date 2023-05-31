@@ -1,0 +1,19 @@
+using Microsoft.VisualBasic;
+using System;
+using System.Runtime.CompilerServices;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Enter product price:");
+        double productPrice = double.Parse(Console.Readline(());
+        Console.WriteLine("Enter discount percentage:");
+        double discountPercentage = double.Parse(Console.Readline(());
+
+        double priceAfterDiscount = productPrice - (productPrice * (discountPercentage / 100));
+        double moneySaved = productPrice - priceAfterDiscount;
+        Console.WriteLine("The price after the discount is: "+priceAfterDiscount);
+        Console.WriteLine(moneySaved + " Saved with the discount");
+    }
+}
