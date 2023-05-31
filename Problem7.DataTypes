@@ -1,0 +1,21 @@
+using Microsoft.VisualBasic;
+using System;
+using System.Runtime.CompilerServices;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        short firstVariable = -1;
+        int secondVariable = 34893434;
+        double thirdVariable = 3.14;
+        short forthVariable = -129;
+        short fifthVariable = 250;
+        long sixthVariable = 94938483434;
+        bool seventhVariable = false;
+        char eightVariable = '$';
+        String ninthVariable = "@";
+        String tenthVatiable = "Java";
+        char eleventhVariable = 'J';
+    }
+}
